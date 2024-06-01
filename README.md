@@ -6,9 +6,9 @@ Cette application Bokeh visualise des données provenant de l'ensemble de donné
 ## Contenu du dépôt
 
 - `README.md` : Description de l'application.
-- `data_visualization.ipynb` : Notebook Jupyter contenant le code de l'application et l'analyse des données.
-- `bokeh_app.py` : Script Python contenant le code de l'application Bokeh.
-- `data/` : Dossier contenant le fichier de données `AvitoCarDataset_ready2Viz.csv`.
+- `data_cleaning.ipynb` : Notebook Jupyter contenant le code de l'application et l'analyse des données.
+- `bokeh.py` : Script Python contenant le code de l'application Bokeh.
+- `AvitoCarDataset_ready2Viz.csv : Dossier contenant le fichier de données `AvitoCarDataset_ready2Viz.csv`.
 
 ## Visualisations
 
