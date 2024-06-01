@@ -1,39 +1,19 @@
-### OUAHJOUJOU Youssef / Oussama kml
-# Bokeh Data App 
+### OUAHJOUJOU Youssef / Oussama LAGHCHIM
 
-Cette application Bokeh visualise des données provenant de l'ensemble de données Avito Car. Elle permet d'analyser diverses caractéristiques des voitures, telles que la puissance fiscale, le type de carburant, le kilométrage, et plus encore.
+Cette application de visualisation des données utilise plusieurs bibliothèques Python, notamment Bokeh, Pandas et Matplotlib, pour analyser et visualiser des informations extraites d'un dataset Marocain de voitures provenant d'Avito. Elle présente plusieurs graphiques interactifs et informatifs permettant de mieux comprendre divers aspects des données de voitures d'occasion, telles que les marques, les prix, les kilométrages, et d'autres caractéristiques. Voici un résumé des différentes visualisations et de leur contenu:
 
-## Contenu du dépôt
+--> Kilométrage moyen par marque Description : Ce graphique à barres montre le kilométrage moyen des voitures pour chaque marque. Axes : X : Marque Y : Kilométrage moyen Interactivité : Un outil de survol (hover) affiche le détail du kilométrage moyen pour chaque marque.
 
-- `README.md` : Description de l'application.
-- `data_cleaning.ipynb` : Notebook Jupyter contenant le code de l'application et l'analyse des données.
-- `bokeh.py` : Script Python contenant le code de l'application Bokeh.
-- `AvitoCarDataset_ready2Viz.csv : Dossier contenant le fichier de données `AvitoCarDataset_ready2Viz.csv`.
+--> Prix moyen par marque Description : Ce graphique à barres représente le prix moyen des voitures pour chaque marque. Axes : X : Marque Y : Prix moyen Interactivité : Un outil de survol (hover) affiche le détail du prix moyen pour chaque marque.
 
-## Visualisations
+--> Nombre d'occurrences de la marque la plus fréquente par ville Description : Ce graphique à barres horizontales indique la marque de voiture la plus fréquente pour chaque ville et le nombre d'occurrences de cette marque. Axes : X : Nombre d'occurrences Y : Ville Interactivité : Un outil de survol (hover) montre les détails de la ville, de la marque et du nombre d'occurrences.
 
-1. **Puissance fiscale par année modèle** : Analyse de la distribution de la puissance fiscale en fonction de l'année du modèle.
-2. **Répartition des types de carburant par marque** : Répartition des différents types de carburant utilisés par chaque marque.
-3. **Heatmap de la boîte de vitesses par ville et prix** : Visualisation de la relation entre la boîte de vitesses, la ville et le prix des voitures.
-4. **Nombre de portes par modèle** : Distribution du nombre de portes par modèle de voiture.
-5. **Heatmap des systèmes de sécurité par marque** : Comparaison des normes de sécurité entre les différentes marques.
-6. **Kilométrage moyen par marque** : Analyse du kilométrage moyen des voitures par marque.
-7. **Prix moyen par marque** : Analyse du prix moyen des voitures par marque.
-8. **Nombre d'occurrences de la marque la plus fréquente par ville** : Analyse des marques les plus populaires dans différentes villes.
-9. **Répartition des états par marque** : Distribution des états des voitures (Bon, Très Bon, Excellent) par marque.
+--> Répartition des États par Marque Description : Ce graphique à barres empilées montre la répartition des états des voitures (Bon, Très Bon, Excellent) pour chaque marque. Axes : X : Fréquence Y : Marque Interactivité : Un outil de survol (hover) affiche le détail de chaque état par marque.
 
-## Instructions
+--> Répartition des types de carburant par marque Description : Ce graphique à barres empilées illustre la répartition des différents types de carburant (Essence, Diesel, etc.) pour chaque marque. Axes : X : Marque Y : Nombre de voitures Interactivité : Un outil de survol (hover) montre les détails du type de carburant et du nombre de voitures par marque.
 
-### Prérequis
+--> Heatmap de la boîte de vitesses par ville et prix (Top 20 villes) Description : Ce heatmap montre la distribution des prix moyens des voitures en fonction de la boîte de vitesses (Automatique, Manuelle) dans les 20 villes principales. Axes : X : Boîte de vitesses Y : Ville Interactivité : Un outil de survol (hover) affiche le prix moyen pour chaque combinaison ville/boîte de vitesses.
 
-- Python 3.x
-- Bokeh
-- Pandas
+--> Heatmap des systèmes de sécurité par marque Description : Ce heatmap présente la répartition des systèmes de sécurité (ABS, ESP, Airbags) pour chaque marque. Axes : X : Système de sécurité Y : Marque Interactivité : Un outil de survol (hover) montre le nombre de chaque système de sécurité par marque.
 
-### Installation
-
-1. Clonez le dépôt :
-
-   ```bash
-   git clone https://github.com/votre_nom_utilisateur/bokeh-data-app.git
-   cd bokeh-data-app
+--> Puissance fiscale par année modèle Description : Ce graphique de dispersion (scatter plot) visualise la puissance fiscale des voitures en fonction de l'année modèle. Axes : X : Année-Modèle Y : Puissance fiscale Interactivité : L'utilisateur peut zoomer et naviguer à travers
